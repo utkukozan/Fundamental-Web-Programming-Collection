@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+        }
+        #first{
+        background: lawngreen;
+        position: relative;  /* Aligns relative to its current position. Aligns according to any outer elements. */
+        top: 40px;
+        left: 30px;
+        }
+        #second{
+        background: red;
+        position: absolute; /* Aligns from the top. */
+        top: 60px; 
+        left: 370px;
+        }
+
+        #third{
+        background: yellow;
+        position: fixed; /* Remains fixed even when scrolling down the browser. */
+        top: 0px; 
+        right: 0px;
+        }
+
+        /* Note: If there is a parent element above with relative position, the child element's position is relative to the parent element's box. (see: 18-positioning-uygulama.html) */
+    </style>
+</head>
+<body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <div id="third"></div>
+</body>
+</html>

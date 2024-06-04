@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        const a = 10;
+        const b = 5;
+        let c = 3;
+        // Arithmetic operators
+        val = a + b; // 15
+        val = a - b; // 5
+        val = a * b; // 50
+        val = a / b; // 2
+        val = a % b; // 10 mod 5 = 2
+        val = c++; // c is incremented by 3 afterwards.
+        val = ++c; // c is incremented by 4 beforehand.
+        // Subtraction can also be done using '--' in the same way.
+
+        val = a; // val is 10
+        val += a; // val = val + a, so val becomes 20
+        // Other operators can be used in the same way.
+
+        val = a == b; // checks if a and b are equal, the result is considered as a boolean, which is false in this case.
+        // When '===' is used, it checks both the value and the type of the variables.
+
+        val = a != b; // checks if a and b are not equal, the result is considered as a boolean, which is true in this case.
+
+        val = a > b; // if a is greater than b, the boolean value is true.
+        // Similarly, the less than sign or the greater than or equal to/less than or equal to signs (<=, >=) can also be used.
+
+        /* Logical Operators */
+        // && (And)
+        val = (a < b) && (a > c); // if a is less than b AND greater than c, val becomes true. Both conditions must be true.
+
+        // || (Or)
+        val = (a < b) || (a > c); // if a is less than b OR greater than c, val becomes true. At least one of the conditions must be true.
+
+        // ! (Not)
+        val = !(a < b); // if a is not less than b, val becomes true.
+    </script>
+</body>
+</html>

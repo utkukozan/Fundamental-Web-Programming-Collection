@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Margin</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-right: 20px; /* Each box leaves a 20px margin on the right */
+        }
+
+        #first {
+            background: red;
+            /* margin: 100px 10px 50px 100px; /* top, right, bottom, left */
+            margin-top: 50px;
+        }
+
+        #second {
+            background: blue;
+            position: relative;
+            margin-top: 100px;
+        }
+
+        #third {
+            background: green;
+            margin-top: 150px;
+        }
+        /* Only right and left margins are added to inline elements */
+        /* margin: auto -> centers the element horizontally. Adjusts its size according to the page as it shrinks. */
+    </style>
+</head>
+
+<body>
+    <!-- Margin is automatically set to 8px. It is distributed to all four corners. To reset it, use CSS. -->
+    <div class="box" id="first">box 1</div>
+    <div class="box" id="second">box 2</div>
+    <div class="box" id="third">box 3</div>
+
+</body>
+
+</html>

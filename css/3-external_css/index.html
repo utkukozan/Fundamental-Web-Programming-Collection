@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="external.css"> <!-- We can use the link tag to connect the html file with css. -->
+    <style>
+        h1{ /* We changed the h1 tag to internal css. No matter what the External CSS is, the page will listen to the internal css. */
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Index Page</h1>
+    <!-- By using External CSS, we can apply styles to all pages in the folder. -->
+    <!-- Please refer to external.css for usage. -->
+    <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="about.html" style="color:green">About</a></li> <!-- No matter what the External CSS is, the page will listen to the inline css. -->
+        <li><a href="reference.html">Reference</a></li>
+    </ul>
+</body>
+
+</html>

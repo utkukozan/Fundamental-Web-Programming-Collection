@@ -1,0 +1,15 @@
+a {
+    /* External CSS for the 'a' tag */
+    color: red;
+    text-decoration: khaki;
+}
+
+li {
+    /* External CSS for the 'li' tag */
+    display: inline; /* Ensures that all categories appear on a single line */
+}
+
+h1 {
+    /* External CSS for the 'h1' tag */
+    background-color: beige;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+</head>
+<body>
+    <script>
+        // Global Scopes (Accessible by functions)
+        var name = "Utku";
+        function logName(){
+            console.log(name);
+        }
+        if(true){
+            console.log(name);
+        }
+        logName();
+        console.log(name);
+        
+        // Local Scopes (Only accessible within the function block)
+        function logNamee(){
+            var name = "Utkuu";
+            var age = "24";
+        }
+        console.log(name) // Prints the global value, which is "Utku".
+
+        // Difference between var and const-let
+
+        var i = 1;
+        for (let i=0; i<10;i++){
+            console.log("i",i); // Prints all values of i from 0 to 9.
+        }
+        console.log(i);
+        // Here, the last printed value of i will be 1. However, if var is used instead of let inside the for loop, 
+        // the initially defined i value will also change.
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        let val;
+
+        val = window;
+        //alert
+        alert('Hello')
+
+        //prompt
+        var b = prompt("Enter a number ");
+        console.log(b);
+        window.alert(b);
+        
+        //confirm
+        val = confirm("Are you sure?");
+
+        //scroll
+        val = window.scrollX;
+
+        //location
+        val = window.location; // Gives page information
+        val = window.location.href; // Gives the page's URL
+        val = window.location.hostname; // Gives the page's address
+        val = window.location.host;
+        val = window.location.protocol; // Gives the http protocol
+        val = window.location.search; //
+        // window.location.reload(); // Constantly refreshes the page.
+
+        //document
+        val = window.document // Gives the page's code.
+
+        console.log(val);   
+    </script>
+</body>
+</html>

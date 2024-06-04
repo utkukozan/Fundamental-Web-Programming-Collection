@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+
+<body>
+    <script>
+        // Template Literals
+
+        const fullName = 'Utku';
+        const city = 'Ankara';
+        const yearOfBirth = 2000;
+        const a = new Date();
+        let val;
+
+
+        val = 'My name is ' + fullName +
+            ' I\'m ' + (a.getFullYear - yearOfBirth) + ' years old ' +
+            ' and I live in ' + city;
+
+        console.log(val);
+
+        // Instead of using the above format, you can use the following format.
+        val = `My name is ${fullName} I'm ${(a.getFullYear - yearOfBirth >= 18) ? 'over 18' : 'under 18'} and I live in ${city}`;
+
+        console.log(val);
+    </script>
+</body>
+
+</html>

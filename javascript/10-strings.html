@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <script>
+        const firstName = "Utku";
+        const lastName = "William";
+        let val;
+
+        // Concatenation
+        val = firstName + " " + lastName;
+        console.log(val);
+        // OR
+        val = "Utku";
+        val += " William";
+        val = "My name is " + firstName + ' ' + lastName;
+        console.log(val);
+        // OR
+        val = firstName.concat(',', lastName);
+
+        // String length
+        let length = val.length; // Tells the number of characters
+        console.log(length);
+
+        // String uppercase-lowercase
+        val = val.toLowerCase();
+        console.log(val);
+        val = val.toUpperCase();
+        console.log(val);
+
+        // indexOf to find where it starts
+        let index = val.indexOf('WILLIAM');
+        console.log(index);
+        // If the character is not found, it returns -1.
+
+        // Substring
+        val = val.substring(0, 5); // Takes the characters between index 0 and 5
+        console.log(val);
+        // Alternative: slice
+        val = val.slice(0, 2);
+        console.log(val);
+
+        // String replace
+        val = val.replace('UT', '  UTK  ');
+        console.log(val);
+
+        // Trim method to remove leading and trailing spaces
+        val = val.trim();
+        console.log(val);
+
+        // Split method to split at the delimiter
+        let hobbies = 'cinema,sports,books,programming';
+        val = hobbies.split(',');
+        console.log(val);
+
+        // Fixing the URL
+        console.log(url.toLowerCase()
+            .replace(/ /g,'-') // Replaces spaces with hyphens. If '/ /g' is not used, it won't apply to the entire string.
+            .replace(/ı/g,'i')); // Replaces all occurrences of 'ı' with 'i'.
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Example</title>
+    <link rel="stylesheet" href="8-selectors_example.css">
+</head>
+
+<body>
+
+    <h1>body>h1</h1>
+
+    <h2 class="active">body>h2</h2>
+
+    <p>body>p</p>
+
+    <div class="active">
+        <p class="paragraph">body>div>p>.paragraph</p>
+        <p id="paragraph">body>div>p>#paragraph</p>
+
+        <h3>body>div>h3</h3>
+
+        <p>body>div>p</p>
+    </div>
+
+    <h2>body>h2</h2>
+    <div>
+        <h3>body>div>h3</h3>
+
+        <ul>
+            <li>list item one</li>
+            <li>list item two</li>
+            <li class="active">list item three</li>
+            <li>list item four</li>
+            <li>list item five</li>
+        </ul>
+    </div>
+
+    <h3>body>h3</h3>
+    <p class="paragraph">body>p</p>
+
+    <div>
+        <h2>body>div>h2</h2>
+
+        <p>body>div>p</p>
+
+        <p>body>div>p</p>
+
+    </div>
+
+    <br><br>
+
+    <form>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

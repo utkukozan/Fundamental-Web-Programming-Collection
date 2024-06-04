@@ -1,0 +1,102 @@
+/* Set <body> font-size to 14px and background to #f2f2f2 */
+body {
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+/* Add gray border and padding of 5px to <h1> tag */
+h1 {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+/* Set text color of <h2> tags to red */
+h2 {
+    color: red;
+}
+
+/* Add green border to <h2> tags with class "active" */
+h2.active {
+    border: 1px solid green;
+}
+
+/* Apply font-weight bold to the element with id "paragraf" */
+p#paragraf {
+    font-weight: bold;
+}
+
+/* Add gold background to <h3> tags inside <div> */
+div h3 {
+    background-color: gold;
+}
+
+/* Set red background to all <p> elements that come after <h1> at the same level */
+h1~p {
+    background-color: red;
+}
+
+/* Set green background to all <p> elements inside <div> */
+div>p {
+    background-color: green;
+}
+
+/* Add gray border and margin-top of 2px to all list items */
+ul li {
+    border: 1px solid gray;
+    margin-top: 2px;
+}
+
+/* Add gold background to list items with class "active" */
+ul li.active {
+    background-color: gold;
+}
+
+/* Increase word-spacing of the first list item */
+ul li:first-child {
+    word-spacing: 10px;
+}
+
+/* Increase letter-spacing of the last list item */
+ul li:last-child {
+    letter-spacing: 10px;
+}
+
+/* Set text color to green for list items with odd index */
+li:nth-of-type(odd) {
+    color: green;
+}
+
+/* Set text color to orange for list items with even index */
+li:nth-of-type(even) {
+    color: orange;
+}
+
+/* Apply the following CSS to input elements with type "text" or "password" */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Apply the following CSS to input elements with type "submit" */
+input[type=submit] {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When the submit button is hovered, change the background color to #5c5b23 */
+input[type=submit]:hover {
+    background-color: #5c5b23;
+}
+
+/* When input elements with type "text" or "password" are focused, change the background color to lightgoldenrodyellow */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: lightgoldenrodyellow;
+}

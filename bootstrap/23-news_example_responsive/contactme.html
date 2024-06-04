@@ -1,0 +1,172 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Squared">
+    <meta name="author" content="Utku">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>News Squared | Contact Me</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo-box">
+            <div class="container">
+                <a href="home.html" class="logo text-uppercase">
+                    <h1><i class="fas fa-globe logo-ico"></i>News Squared</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link"><i class="fas fa-home nav-logo"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link"><i class="fas fa-newspaper nav-logo"></i>
+                            News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sport.html" class="nav-link"><i class="fas fa-futbol nav-logo"></i>
+                            Sport
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="travel.html" class="nav-link"><i class="fas fa-suitcase-rolling nav-logo"></i>
+                            Travel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="culture.html" class="nav-link"><i class="fas fa-theater-masks"></i>
+                            Culture
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active-menu" href="" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h nav-logo"></i>
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contactme.html"><i
+                                        class="fas fa-file-signature nav-logo"></i>Contact
+                                    Me</a></li>
+                            <li><a class="dropdown-item" href="about.html"><i class="far fa-bookmark nav-logo"></i>About
+                                    Me</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signin.html" class="nav-link"><i class="fas fa-sign-in-alt nav-logo"></i>
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex align-content-end">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-block">
+            <div class="container text-center">
+                <div class="left-part">
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-at"></i>
+                    <i class="fas fa-mail-bulk"></i>
+                </div>
+                <form action="response.html" class="contact-form" method="GET">
+                    <h1 style="padding-bottom:30px">Contact Me</h1>
+                    <div class="info">
+                        <p>Full Name</p> <input class="form-control" type="text" name="name" placeholder="Full name">
+                        <p>E-Mail*</p> <input class="form-control" type="email" name="mail" placeholder="Email"
+                            required>
+                        <p>Telephone</p> <input class="form-control" type="tel" maxlength="11" name="tel"
+                            placeholder="Phone number">
+                        <p>Issue*</p> <input class="form-control" list="Issues" name="Issue" placeholder="Issue"
+                            required>
+                        <datalist id="Issues">
+                            <option value="Login/Register Problem">
+                            <option value="Article Errors">
+                            <option value="Report News">
+                            <option value="Partnership">
+                            <option value="Offer">
+                        </datalist>
+                    </div>
+                    <p>Message*</p>
+                    <div>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 bg-dark text-white text-center">
+        <div>
+            <h4 class="text-uppercase fw-bold">Social Media</h4>
+            <ul class="list-inline list-unstyled">
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;"
+                        href=""><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-youtube"></i></a>
+                    </button>
+                </li>
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href="">
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-instagram"></i>
+                        </button></a>
+                </li>
+    
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href=""><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </button></a>
+                </li>
+    
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;"
+                        href=""><button class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </button>
+                </li>
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href="home.html"><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-dribbble"></i>
+                        </button></a>
+                </li>
+                
+            </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <small class="fst-italic">
+                        Copyright © All Rights <i>Reserved</i> 2024
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+
+</html>

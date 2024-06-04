@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Squared">
+    <meta name="author" content="Utku">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>News Squared | Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-box">
+            <div class="container">
+                <a href="home.html" class="logo text-uppercase">
+                    <h1><i class="fas fa-globe logo-ico"></i>News Squared</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link active-menu"><i class="fas fa-home nav-logo"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link"><i class="fas fa-newspaper nav-logo"></i>
+                            News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sport.html" class="nav-link"><i class="fas fa-futbol nav-logo"></i>
+                            Sport
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="travel.html" class="nav-link"><i class="fas fa-suitcase-rolling nav-logo"></i>
+                            Travel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="culture.html" class="nav-link"><i class="fas fa-theater-masks"></i>
+                            Culture
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h nav-logo"></i>
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contactme.html"><i
+                                        class="fas fa-file-signature nav-logo"></i>Contact
+                                    Me</a></li>
+                            <li><a class="dropdown-item" href="about.html"><i class="far fa-bookmark nav-logo"></i>About
+                                    Me</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signin.html" class="nav-link"><i class="fas fa-sign-in-alt nav-logo"></i>
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex align-content-end">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <!-- News -->
+            <a href="news.html" class="category" id="orange-borderline">News</a>
+            <hr>
+            <div class="clearfix container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/covid19died.jpg" alt="Covid-19 Funeral">
+                        <p class="news-text">
+                            The number of people who have died worldwide in the Covid-19 pandemic has surpassed three
+                            million, according to Johns Hopkins University.
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id1" role="button"
+                            aria-expanded="false" aria-controls="block-id1"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id1">Tensions are growing over the build-up of Russian troops at its border with
+                            Ukraine. The BBC's Jonah Fisher reports from eastern Ukraine's front line between soldiers
+                            and
+                            Russian-backed forces.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/giantclams.jpg" alt="Giant Clams">
+                        <p class="news-text">
+                            Around 200 tonnes of illegally harvested giant clam shells worth nearly $25 million (£18
+                            million) have been seized in the Philippines.
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id2" role="button"
+                            aria-expanded="false" aria-controls="block-id2"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id2">The seizure is one of the largest ever hauls of the endangered species.
+                            Four suspects have been arrested on an island in the ecologically protected province of
+                            Palawan.
+                            Giant clams can grow larger than one metre across, and weigh up to 250kg. They are seen as
+                            vital
+                            to the local marine ecosystem.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <iframe class="img-fluid-home rounded" src="https://www.youtube.com/embed/QkqoPQvGdoc"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="news-text">
+                            Mars helicopter first flight: Nasa to test Ingenuity
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id3"
+                                role="button" aria-expanded="false" aria-controls="block-id3"><span class="collapsed">
+                                    Show more
+                                </span>
+                                <span class="expanded">
+                                    Show Less
+                                </span></button>
+                        <p class="collapse" id="block-id3">This small helicopter is set to be the first to fly on another
+                            planet.
+                            Ingenuity is a 1.8kg (4lb) helicopter that travelled to Mars inside Nasa's Perseverance
+                            rover, which landed in February 2021.
+                            Nasa say it's now aiming to test it on Monday 19 April but admits it may not be successful,
+                            in which case they'll try again later in the week.</p>
+                        </p>
+                    </div>
+                </div>
+        </article>
+        <article>
+            <!-- Sport -->
+            <a href="sport.html" class="category" id="red-borderline">Sport</a>
+            <hr>
+            <div class="clearfix container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Barcelona-Copa-Del-Rey.jpg"
+                            alt="Barcelona won the Copa del Rey">
+                        <p class="news-text">
+                            Barca thrash Athletic to win Copa del Rey. Barcelona scored four goals in 12 minutes -
+                            including a brilliant strike
+                            from Lionel Messi - to thrash Athletic Bilbao and win the Copa del Rey.
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id4"
+                                role="button" aria-expanded="false" aria-controls="block-id4"><span class="collapsed">
+                                    Show more
+                                </span>
+                                <span class="expanded">
+                                    Show Less
+                                </span></button>
+                        <p class="collapse" id="block-id4">
+                            Barca were frustrated until the 60th minute when Antoine Griezmann turned in Frenkie de
+                            Jong's cross before De Jong headed in himself three minutes later.
+                            Russian-backed forces.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Jonny-Bairstow.jpg" alt="Jonny Bairstow">
+                        <p class="news-text">
+                            IPL: Sunrisers Hyderabad beaten by Mumbai Indians despite Jonny Bairstow knock
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id5" role="button"
+                            aria-expanded="false" aria-controls="block-id5"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id5">>Mumbai Indians eked out a 13-run Indian Premier League win over Sunrisers
+                            Hyderabad, who lost their way after Jonny Bairstow's sparkling 43.
+                            Bairstow had Sunrisers on track to chase 151, but after he trod on his stumps, they fell
+                            from 72-0 to 104-5.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Chelsea-Boss-Thomas-Tuchel.jpg"
+                            alt="Thomas Tuchel">
+                        <p class="news-text">
+                            Chelsea 1-0 Man City: Thomas Tuchel proving Roman Abramovich's well-worn formula works
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id6" role="button"
+                            aria-expanded="false" aria-controls="block-id6"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id6">When Chelsea owner Roman Abramovich proved no-one's history at the club
+                            could shield them from his ruthless pursuit of success by sacking the iconic figure of
+                            manager Frank Lampard in January, he was following a well-worn formula.
+                            Abramovich has a habit of acting brutally but with ultimately successful outcomes - so it
+                            was no surprise that as Lampard went out of one door at Stamford Bridge, in came the
+                            experienced, proven managerial expertise of Thomas Tuchel.</p>
+                        </p>
+                    </div>
+                </div>
+        </article>
+        <article>
+            <!-- Travel -->
+            <a href="travel.html" class="category" id="green-borderline">Travel</a>
+            <hr>
+            <div class="clearfix container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Aurora.jpg" alt="Aurora">
+                        <p class="news-text">
+                            Sheldon Chalet might just be the most remote luxury hotel anywhere on Earth
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id7" role="button"
+                            aria-expanded="false" aria-controls="block-id7"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id7">If you're looking to be reminded of the magnificence of Mother Nature and
+                            the Universe, this is the holiday home for you. With a helicopter as your only transport
+                            option, you'll have a bird's eye view of the glacier and mountains surrounding this
+                            extraordinary property in the middle of Alaska.
+                            Sheldon Chalet is a 5-bedroom luxury chalet in Denali National Park. Denali, for the
+                            uninitiated, is the highest mountain in North America.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Austria-cross.jpg"
+                            alt="Cross on a hill in Hochhädrich">
+                        <p class="news-text">
+                            From butter lambs to whipping women: The strangest Easter traditions from around the world
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id8" role="button"
+                            aria-expanded="false" aria-controls="block-id8"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id8">Easter is one of the most important dates in the Christian calendar. In
+                            mainstream contemporary culture, it has become characterised by motifs including chocolate
+                            eggs, bunnies, lambs and springtime. But in some cultures, there are alternate ways to
+                            celebrate the resurrection of Christ.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <iframe class="img-fluid-home rounded" src="https://www.youtube.com/embed/wjuH27XmuMI"
+                            title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="news-text">
+                            This treehouse ‘suite’ helps people relax and connect with nature
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id9" role="button"
+                            aria-expanded="false" aria-controls="block-id9"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id9">Three treehouses, connected by rope bridges, are one of the most
+                            sought-after properties on Airbnb.
+                            Located in a patch of peaceful woodlands near downtown Atlanta in Georgia, USA , guests have
+                            full use of the ‘suite’.
+                            Host Peter Bahouth originally built the structure - using upcycled materials - for his own
+                            use, and didn’t expect the huge interest he’s received.</p>
+                        </p>
+                    </div>
+                </div>
+        </article>
+        <article>
+            <!-- Culture -->
+            <a href="culture.html" class="category" id="blue-borderline">Culture</a>
+            <hr>
+            <div class="clearfix container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="img-fluid-home rounded" src="https://www.youtube.com/embed/BSvWxowRdTo"
+                            title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="news-text">
+                            Gustavo Dudamel's blazing Otello takes Barcelona by storm
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id10" role="button"
+                            aria-expanded="false" aria-controls="block-id10"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id10">For the charismatic conductor Gustavo it's a score that is brimming with
+                            variety.
+                            “Immediately these first, you know, bars of the opera are so powerful," enthuses Dudamel.
+                            "There's this moment where you have fortissimo, tutta forza accents. The thing is to balance
+                            this. We are living the drama with an intensity more than with screaming."</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Parisians.jpg" alt="Parisians">
+                        <p class="news-text">
+                            Catch the spring vibe with these vintage pictures of Parisians
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id11" role="button"
+                            aria-expanded="false" aria-controls="block-id11"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id11">There is never too much sunshine -- especially in Paris.
+                            As traveling is limited and many places in Europe are experiencing rather cold weather, let
+                            this selection of vintage images transport you virtually to a warmer place.
+                            The photographs feature Parisians enjoying the first days of spring between 1945 to 1950.
+                        </p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="img-fluid-home rounded" src="img/Eurovision.jpg" alt="Eurovision">
+                        <p class="news-text">
+                            Dutch government will allow 3,500 to attend Eurovision in COVID trial
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#block-id12" role="button"
+                            aria-expanded="false" aria-controls="block-id12"><span class="collapsed">
+                                Show more
+                              </span>
+                              <span class="expanded">
+                                Show Less
+                              </span></button>
+                    <p class="collapse" id="block-id12">Up to 3,500 people will be able to attend this year's Eurovision Song
+                            Contest as part of a trial to see how to reopen venues during the pandemic, the Dutch
+                            government has announced.
+                            Last year's edition was cancelled as Europe was in the throes of the first wave of the
+                            pandemic. This year's contest is to be held in Rotterdam from May 18 to 22 following Dutch
+                            singer Duncan Laurence's victory in the 2019 competition.</p>
+                        </p>
+                    </div>
+                </div>
+        </article>
+    </section>
+    <footer class="py-3 bg-dark text-white text-center">
+        <div>
+            <h4 class="text-uppercase fw-bold">Social Media</h4>
+            <ul class="list-inline list-unstyled">
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;"
+                        href=""><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-youtube"></i></a>
+                    </button>
+                </li>
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href="">
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-instagram"></i>
+                        </button></a>
+                </li>
+    
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href=""><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </button></a>
+                </li>
+    
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;"
+                        href=""><button class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </button>
+                </li>
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href="home.html"><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-dribbble"></i>
+                        </button></a>
+                </li>
+                
+            </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <small class="fst-italic">
+                        Copyright © All Rights <i>Reserved</i> 2024
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

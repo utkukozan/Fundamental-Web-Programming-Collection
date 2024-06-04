@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Images</title>
+    <style>
+
+        .clear{
+            overflow:auto /* Overflow control */
+        }
+        p{
+            border: 1px solid gray;
+            padding: 5px
+        }
+        img{
+            width: 200px;
+            margin-right: 10px;
+            float: right; /* Use float to move the image */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p class="clear">
+        <img src="https://picsum.photos/200" alt="image">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eum.
+    </p>
+</body>
+</html>

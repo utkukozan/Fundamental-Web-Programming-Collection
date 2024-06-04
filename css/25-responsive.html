@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive</title>
+    <meta name="viewport" content="width=device-width">  <!-- This line is necessary for the responsive application to work. -->
+      
+    <style>   
+       
+        *{
+            box-sizing: border-box;
+        }
+        
+        .box{
+            width: 25%;
+            height: 250px;
+            background: yellow;
+            float: left;
+            border: 1px solid blue;
+        }
+        
+        
+        @media screen and (max-width:700px) /* For tablets */ 
+        {
+            .box{
+                width: 50%;              
+            }
+        }
+        
+        @media screen and (max-width:400px) /* For phones */
+        {
+            .box{
+                width: 100%;              
+            }
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

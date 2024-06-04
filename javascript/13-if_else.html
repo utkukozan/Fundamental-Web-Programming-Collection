@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+
+<body>
+    <script>
+        const firstName = "Utku";
+        const age = 21;
+        const isStudent = true;
+        const school = "University"
+
+        if (firstName == "Utku") {
+            console.log("Hello Utku");
+        }
+
+        if (age == 21) {
+            console.log("Age: %d", age);
+        }
+
+        if (isStudent) {
+            console.log("Student");
+        }
+
+        else {
+            console.log("Not a student!");
+        }
+
+        if (age >= 18) {
+            if (school == "University" || school == "high school") { // If the student is in university or high school;
+                console.log("Education status is sufficient. Can get a driver's license.");
+            }
+            else{
+                console.log("Cannot get a driver's license");
+            }
+        }
+        else{
+            console.log("Age is insufficient for a driver's license");
+        }
+
+        if (age>0 && age<12){
+            console.log(`${firstName} is a child`);
+        }
+        else if(age >=13 && age <=18){
+            console.log(`${firstName} is a teenager`); 
+        }
+        else{
+            console.log(`${firstName} is an adult`);
+        }
+
+        //undefined
+        let id = "123123";
+
+        if (typeof id !== 'undefined'){
+            console.log("id" + id);
+        }
+        else{
+            console.log("undefined");
+        }
+
+
+    </script>
+</body>
+
+</html>

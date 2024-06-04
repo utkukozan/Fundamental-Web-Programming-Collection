@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+
+<body>
+    <!-- To use tables, we use the <table> tag. -->
+    <table border=3 width="60%">
+        <!-- The border attribute is used to define the borders of the table. Default is set to 0. -->
+        <thead>
+            <!-- Header Block -->
+            <tr>
+                <!-- Header Row -->
+                <th>Course Name</th> <!-- Header of the 1st column -->
+                <th>Course Hours</th> <!-- Header of the 2nd column -->
+                <th>Course Quantity</th> <!-- Header of the 3rd column -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!-- 1st row -->
+                <!-- The td tag represents the data inside a cell. -->
+                <td>Web Development</td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <!-- 2nd row -->
+                <td>Flutter</td>
+                <td>30</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <!-- 3rd row -->
+                <td>NoSQL Systems</td>
+                <td>24</td>
+                <td>100</td>
+            </tr>
+            <!-- If you want a column to span across other columns, use the colspan attribute. -->
+            <tr>
+                <td colspan="2">Software Development Training</td> <!-- Spans 2 rows. -->
+                <!-- If you want a column to span across other rows, use the rowspan attribute. -->
+                <!-- Note: It merges the column below it. -->
+                <td rowspan="2">50</td>
+            </tr>
+            <tr>
+                <td>Cybersecurity</td> 
+                <td>65</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+
+<body>
+    <script>
+        let category = "phone";
+        let day;
+
+        switch (category) {
+            case 'phone':
+                console.log("Phone category");
+                break;
+            case 'computer':
+                console.log("Computer category");
+                break;
+            default:
+                console.log("Wrong category");
+        }
+        
+        switch(new Date().getDay()){
+            case 0:
+            day = 'Sunday';
+            break;
+            case 1:
+            day = 'Monday';
+            break;
+            case 2:
+            day = 'Tuesday';
+            break;
+            case 3:
+            day = 'Wednesday';
+            break;
+            case 4:
+            day = 'Thursday';
+            break;
+            case 5:
+            day = 'Friday';
+            break;
+            case 6:
+            day = 'Saturday';
+            break;
+        }
+        console.log(day); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- Forms are where users enter their information. -->
+    <!-- They are created using the <form> tag. -->
+    <form>
+        <p>
+            First Name: <input type="text" name="first_name" placeholder="Enter your first name" required>
+            <!-- Creates an input box for the user to enter text. -->
+            <!-- The name attribute determines under which group the input will be sent to the server. -->
+            <!-- The required attribute ensures that the input must be filled in. -->
+            <!-- The placeholder attribute provides a hint or example text for the user. -->
+        </p>
+
+        <p>
+            Last Name: <input type="text" name="last_name" placeholder="Enter your last name" required>
+            <!-- Setting the type to "text" allows the user to enter text. -->
+        </p>
+
+        <p>
+            Email: <input type="email" name="email" placeholder="Enter your email" required>
+            <!-- Setting the type to "email" prompts the user to enter an email address. It is commonly used with the required attribute. -->
+        </p>
+
+        <p>
+            Password: <input type="password" name="password" placeholder="Enter your password" required>
+            <!-- Setting the type to "password" allows the user to enter a password. -->
+        </p>
+
+        <p>
+            Male <input type="radio" name="gender" required>
+            <!-- Setting the type to "radio" creates a radio button for selection. -->
+            Female <input type="radio" name="gender">
+            <!-- To make it mutually exclusive, we group them using the name attribute. -->
+        </p>
+
+        <p>
+            Remember Me: <input type="checkbox" name="remember_me">
+            <!-- Setting the type to "checkbox" creates a checkbox for selection. -->
+        </p>
+
+        <p>
+            Place of Birth: <select>
+                <!-- Using the <select> tag, we can provide the user with a dropdown menu to select an option. -->
+                <option>Ankara</option>
+                <option>Istanbul</option>
+            </select>
+        </p>
+
+        <p>
+            Date of Birth: <input type="date" name="date_of_birth">
+            <!-- Setting the type to "date" allows the user to enter a date. -->
+        </p>
+
+        <p>
+            Cities You've Lived In: <br> <select multiple>
+                <!-- Using the <select multiple> tag, we can allow the user to select multiple options from a dropdown menu. -->
+                <option>Ankara</option>
+                <option>Istanbul</option>
+            </select>
+        </p>
+
+        <p>
+            Phone Number: <input type="tel" name="phone_number" required>
+            <!-- Setting the type to "tel" prompts the user to enter a phone number. -->
+        </p>
+
+        <p>
+            Select a number between 1 and 5: <input type="number" name="number" min="1" max="5">
+            <!-- Setting the type to "number" and specifying the minimum and maximum values allows the user to select a number within that range. -->
+        </p>
+
+        <input type="submit" value="Submit">
+        <!-- Setting the type to "submit" creates a submit button. The value attribute determines the button's label. -->
+        <!-- NOTE: The destination URL is specified by adding action="destination" to the form tag at the top. -->
+        <input type="reset" value="Reset">
+        <!-- The reset button clears all form values. -->
+
+        <p>
+            Did you like our website? <input type="range" name="popularity" min="1" max="10">
+            <!-- Setting the type to "range" allows the user to select a value using a slider. -->
+        </p>
+
+        <p>
+            Search other websites: <input type="search" name="search">
+            <!-- Setting the type to "search" allows the user to enter a search query. -->
+        </p>
+    </form>
+</body>
+
+</html>

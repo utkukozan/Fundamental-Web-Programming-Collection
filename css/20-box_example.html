@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box Example</title>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f1f1f1;
+}
+
+h2{
+	margin-bottom: 10px;
+}
+
+
+#container{
+	width: 1140px;
+	margin: 20px auto;
+}
+#blog-post-container{
+	width: 75%;	
+	float: left;
+}
+
+#other-posts{
+	width: 25%;	
+	float: left;
+	padding-left: 10px;
+	
+	
+}
+
+#inner-other-posts{
+	position: fixed;
+	top:20px;
+}
+
+#author-box
+{
+	border: 1px solid grey;
+}
+
+.box{
+	background: white;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+.blog-post{
+	position: relative;
+	
+
+}
+
+.blog-post img{
+	width: 100%;
+}
+
+.date{
+	position: absolute;
+	right:50px;
+	top: 15px;
+}
+
+.blog-text{
+	margin-top: 15px;
+}
+
+.tags li{
+	list-style: none;
+	display: inline;
+	margin-right: 5px;
+}
+
+.tags li a{
+	text-decoration: none;
+}
+
+#author-box{
+	border-top: 1px solid RGB(0,0,0,.125);
+	padding-top: 10px;
+}
+
+
+#author-box img{
+	border-radius: 50%;
+	float: left;
+}
+
+.author-text{
+	float: left;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+</style>
+
+<body>
+	<div id="container"></div>
+		
+		<div id="blog-post-container">			
+			<div class="blog-post box">
+				<h2>My first blog post</h2>
+				<p class="date">10.10.2018</p>
+				<img src="https://picsum.photos/500" height="300px">
+				<p class="blog-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea voluptate qui aliquid est, illum quaerat aut! Dolore qui doloremque culpa suscipit harum molestiae commodi fugiat. Natus hic quos consequuntur.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea voluptate qui aliquid est, illum quaerat aut! Dolore qui doloremque culpa suscipit harum molestiae commodi fugiat. Natus hic quos consequuntur.
+				</p>
+				
+				<ul class="tags">
+					<li><a href="">Asp.net</a></li>
+					<li><a href="">Angular</a></li>
+					<li><a href="">React</a></li>
+					<li><a href="">NodeJs</a></li>
+				</ul>
+				
+			</div>	
+				<div class="blog-post box">
+				<h2>My first blog post</h2>
+				<p class="date">10.10.2018</p>
+				<img src="https://picsum.photos/500" height="300px">
+				<p class="blog-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea voluptate qui aliquid est, illum quaerat aut! Dolore qui doloremque culpa suscipit harum molestiae commodi fugiat. Natus hic quos consequuntur.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea voluptate qui aliquid est, illum quaerat aut! Dolore qui doloremque culpa suscipit harum molestiae commodi fugiat. Natus hic quos consequuntur.
+				</p>
+				
+				<ul class="tags">
+					<li><a href="">Asp.net</a></li>
+					<li><a href="">Angular</a></li>
+					<li><a href="">React</a></li>
+					<li><a href="">NodeJs</a></li>
+				</ul>
+				
+			</div>	
+				<div class="blog-post box">
+				<h2>My first blog post</h2>
+				<p class="date">10.10.2018</p>
+				<img src="https://picsum.photos/500" height="300px">
+				<p class="blog-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea voluptate qui aliquid est, illum quaerat aut! Dolore qui doloremque culpa suscipit harum molestiae commodi fugiat. Natus hic quos consequuntur.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea voluptate qui aliquid est, illum quaerat aut! Dolore qui doloremque culpa suscipit harum molestiae commodi fugiat. Natus hic quos consequuntur.
+				</p>
+				
+				<ul class="tags">
+					<li><a href="">Asp.net</a></li>
+					<li><a href="">Angular</a></li>
+					<li><a href="">React</a></li>
+					<li><a href="">NodeJs</a></li>
+				</ul>
+				
+			</div>	
+		</div>
+		
+		<div id="other-posts">		
+			<div id="inner-other-posts" class="box">	
+		
+				<p class="other">
+					Lorem ipsum dolor sit amet.
+				</p>
+				<p class="other">
+					Lorem ipsum dolor sit amet.
+				</p>
+				<p class="other">
+					Lorem ipsum dolor sit amet.
+				</p>
+					<p class="other">
+					Lorem ipsum dolor sit amet.
+				</p>
+					<p class="other">
+					Lorem ipsum dolor sit amet.
+				</p>
+					<p class="other">
+					Lorem ipsum dolor sit amet.
+				</p>
+			
+			</div>
+		</div>		
+		
+		<div style="clear: both;"></div>
+		
+		<div id="author-box">
+			<img src="https://picsum.photos/200" alt="" width="50px" height="50px">
+			<p class="author-text">
+				Utku
+			</p>
+		</div>
+		
+		
+	</div>
+	
+	
+</body>
+</html>

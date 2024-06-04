@@ -1,0 +1,86 @@
+/* Pseudo selectors are divided into two types.
+    Pseudo elements target a specific part.
+    Pseudo classes target a specific area.
+*/
+
+/* Pseudo element example */
+p::first-line{
+    color: brown;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    /* Makes the first visible line of all paragraphs red and spaced. */
+}
+p.about::first-line{
+    color:green;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    /* Makes the first visible line of paragraphs with the "about" class red and spaced. */
+}
+
+p::first-letter{
+    /* Makes the first letter of p tags uppercase */
+    font-size: 48px;
+}
+
+p::after{
+    /* Adds content after the paragraph tag */
+    content: "-test"; 
+    /* Trick: if content is left empty, it can be used for styling */
+    display:block;
+    background-color: coral;
+    padding: 10px;
+}
+
+/* Pseudo class example */
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: square;
+}
+
+ul li:nth-of-type(even){
+    /* Adds properties to even elements under ul tags */
+    background-color: purple;
+}
+ul li:nth-of-type(odd){
+    /* Adds properties to odd elements under ul tags */
+    background-color: orange;
+}
+ul li:first-child{
+    /* Adds properties to the first element under ul tags (first child) */
+    background-color: red;
+}
+a{
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    width:80px;
+    border:1px solid gray;
+    margin-bottom:10px;
+}
+
+/* Properties for the a tag */
+a:link{ /* Not visited */
+    color:red;
+}
+a:visited{ /* Previously visited link */
+    color:gray
+}
+a:hover{ /* Mouse hover */
+    color:white;
+    background-color: palegreen;
+}
+a:active{ /* Clicked */
+    color:green;
+    background-color: gold;
+}
+
+span{
+    display:none;
+    background:yellow;
+    padding:20px;
+}
+
+div:hover span{ /* When hovering over a div class, show the span again */
+      display:block;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates & Times</title>
+</head>
+<body>
+    <script>
+        let d = new Date(); // Defines a date object named 'd'.
+        let a = new Date();
+        // SET Methods
+        d.setFullYear(2013); // Sets the year to 2013.
+        d.setMonth(5); // Sets the month to June (0-based index).
+        d.setDate(20); // Sets the day to 20.
+        d.setHours(10); // Sets the hour to 10.
+
+        // GET Methods
+        console.log(d); // Prints the full date and time.
+        console.log(typeof d); // object
+
+        console.log(d.getDate()); // Prints the day.
+        console.log(d.getDay()); // Prints the day of the week.
+        console.log(d.getFullYear()); // Prints the year.
+        console.log(d.getHours()) // Prints the hour.
+        console.log(d.getMonth()) // Returns the month (0 for January).
+        console.log(d.getSeconds()) // Returns the seconds.
+
+        // Object
+        let birthday = new Date(2000,1,26);
+        console.log(birthday); // Prints the birthdate.
+        console.log(a.getFullYear() - birthday.getFullYear()); // Calculates the age.
+    </script>
+</body>
+</html>

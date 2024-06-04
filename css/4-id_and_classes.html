@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ID and Classes</title>
+    <style>
+        p {
+            color: red;
+            font-size: 20px;
+        }
+
+        .red {
+            /* This is how a class is created. The line with the class takes on the properties inside it. */
+            color: red !important;
+            /* When !important is used after a code, that value becomes dominant no matter what. */
+        }
+
+        h1 {
+            color: salmon;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .f50 {
+            font-size: 22px;
+        }
+
+        .f22p {
+            font-size: 22px;
+            color: purple;
+        }
+
+        #header { /* Used to define an ID */
+            font-size: 45px;
+        }
+
+        #paragraf { /* IDs are used for only one element */
+            border:1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header" class="red">Hello</h1>
+    <p id="paragraf" class="f50"> Utku</p>
+    <p> HTML Examples </p>
+    <p style="color: blue;"> CSS Examples </p>
+    <!-- The value assigned to the p tag internally (above) is overridden. It becomes inline CSS. -->
+    <p class="orange">ID example</p>
+    <p class="f22p">ID example 2</p>
+</body>
+
+</html>

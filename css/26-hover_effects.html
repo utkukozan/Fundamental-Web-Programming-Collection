@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects</title>
+    <style>
+        .card{
+            width: 150px;
+            height: 150px;
+            background: blue;
+            transition: width 2s, height 2s, background 1s;
+            margin-bottom: 10px;
+        }
+
+        .card:hover{ /* When hovered over, the box will grow and change color */
+            width: 250px; 
+            height: 250px;
+            background: red;
+            
+        }
+
+        #card1{
+            transition-timing-function: ease; /* Slow at first, then fast, then slow */
+        }
+        #card2{
+            transition-timing-function: linear; /* Equal durations */
+        }
+        #card3{
+            transition-timing-function: ease-in; /* Slow at first, then fast */
+        }
+        #card4{
+            transition-timing-function: ease-out; /* Fast at first, then slow */
+        }
+        #card5{
+            transition-timing-function: ease-in-out; /* Slow at first, then fast, then slow again */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card" id="card1"></div>
+    <div class="card" id="card2"></div>
+    <div class="card" id="card3"></div>
+    <div class="card" id="card4"></div>
+    <div class="card" id="card5"></div>
+</body>
+</html>

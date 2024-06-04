@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <!-- 
+        Selectors  
+        1 : (*) => all tags
+        2 : (p) => all p tags
+        3 : (div p) => all p tags inside div
+        4 : (div, p) => all div tags and all p tags
+        5 : (div > p) => all p tags with div as their parent
+        6 : (p~div) => all div tags at the same level as p
+        7 : (p + div) => all div tags that come immediately after p
+    -->
+    <style>
+        *{
+            border: 2px solid blue;
+                /* Adds a blue border to all tags */
+        }
+
+        p {
+            border: 2px solid red;
+                /* Adds a red border to p tags */
+        }
+
+        div p {
+            border: 2px solid green;
+                /* Makes paragraphs inside divs green */
+        }
+
+        .container div.box {
+            border: 2px solid paleturquoise;
+                /* Makes all divs with class "box" inside the "container" class turquoise */
+
+        }
+
+        div,p {
+            border: 2px solid purple;
+                /* Makes all div and p tags purple */
+        }
+
+        div.box,p {
+            border: 2px solid orange;
+                /* Makes divs with class "box" and p tags orange */
+        }
+
+        div>p {
+            border: 2px solid black;
+            /* Makes the border of p tags that are direct children of div tags black */
+        }
+
+        p~div {
+            border: 2px solid brown;
+            /* Makes the border of div tags that are at the same level as p tags brown */
+        }
+
+        p+div {
+            border: 2px solid yellow;
+                /* Makes the border of div tags that come immediately after p tags yellow */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p class="p1">.container > paragraph </p>
+        <p class="p1">.container > paragraph </p>
+
+        <div class="box">
+            .container > box
+
+            <p>.container > box > paragraph </p>
+            <p>.container > box > paragraph </p>
+
+        </div>
+
+        <div class="box">
+            .container > box
+        </div>
+
+        <div class="box">
+            .container > box
+        </div>
+
+        <div>
+            .container > div
+        </div>
+
+    </div>
+
+    <p>paragraph
+    <p>
+    <p>paragraph </p>
+
+    <div class="box">box </div>
+    <div class="box">box </div>
+
+
+</body>
+
+</html>

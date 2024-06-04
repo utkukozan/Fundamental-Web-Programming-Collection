@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Example</title>
+</head>
+
+<body>
+    <script>
+        var accountA = {
+            name: 'Utku',
+            accountNo: '123456',
+            balance: 3000,
+            extraAccount: 2000
+        }
+
+        var accountB = {
+            name: 'Mehmet',
+            accountNo: '789123',
+            balance: 6000,
+            extraAccount: 5000
+        }
+
+        function withdrawMoney(account, amount) {
+            console.log(`Hello ${account.name}`);
+
+            if (account.balance >= amount) {
+                console.log("You can withdraw your money");
+            } else {
+                var total = account.balance + account.extraAccount;
+
+                if (total >= amount) {
+                    if (confirm('Do you want to use your extra account?')) {
+                        console.log("You can withdraw your money");
+                    }
+                    else {
+                        console.log(`There is not enough ${amount} in your account number ${account.accountNo}.`)
+                    }
+                }else{
+                    console.log("Sorry, insufficient balance");
+                }
+            }
+        }
+
+        withdrawMoney(accountA, 4000);
+        withdrawMoney(accountB, 2000); 
+    </script>
+</body>
+
+</html>

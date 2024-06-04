@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Squared">
+    <meta name="author" content="Utku">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>News Squared | Register</title>
+    <style>
+        body {
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body background="img/background2.png">
+
+    <header>
+        <div id="logo-box">
+            <div class="container">
+                <a href="home.html" class="logo text-uppercase">
+                    <h1><i class="fas fa-globe logo-ico"></i>News Squared</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link"><i class="fas fa-home nav-logo"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link"><i class="fas fa-newspaper nav-logo"></i>
+                            News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sport.html" class="nav-link"><i class="fas fa-futbol nav-logo"></i>
+                            Sport
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="travel.html" class="nav-link"><i class="fas fa-suitcase-rolling nav-logo"></i>
+                            Travel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="culture.html" class="nav-link"><i class="fas fa-theater-masks"></i>
+                            Culture
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h nav-logo"></i>
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contactme.html"><i
+                                        class="fas fa-file-signature nav-logo"></i>Contact
+                                    Me</a></li>
+                            <li><a class="dropdown-item" href="about.html"><i class="far fa-bookmark nav-logo"></i>About
+                                    Me</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signin.html" class="nav-link"><i class="fas fa-sign-in-alt nav-logo active-menu"></i>
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex align-content-end">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="login">
+        <div class="container-lg bg-light rounded-3 my-5 w-auto">
+            <div class="text-center">
+                <form>
+                    <img src="img/Avatar.png" alt="Avatar" class="img-fluid w-25 avatar">
+                    <br><br>
+                    <label for="uname" class="form-label"><b>Full name</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Full Name" name="uname" required>
+                    <label for="psw" class="form-label"><b>Password</b></label>
+                    <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+                    <label for="email" class="form-label"><b>E-mail</b></label>
+                    <input type="email" class="form-control" placeholder="Enter E-Mail" name="mail" required>
+                    <label for="date" class="form-label"><b>Date of Birth</b></label>
+                    <input type="date" class="form-control" name="date" required>
+                    <label for="date" class="form-label"><b>Telephone</b></label>
+                    <input type="tel" class="form-control" maxlength="11" name="tel">
+                    <label for="date"><b>Gender</b></label> <br>
+                    <label class="form-check-label" for="gender"><input type="radio" class="form-check-input"
+                            name="gender" value="male"> Male</label>
+                    <label class="form-check-label" for="gender"><input type="radio" class="form-check-input"
+                            name="gender" value="male"> Female</label>
+                    <label class="form-check-label" for="gender"><input type="radio" class="form-check-input"
+                            name="gender" value="male"> Other</label>
+                    <br>
+                    <label for="About" class="form-label"><b>About Me</b></label>
+                    <div>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <label for="file" class="form-label"><b>Upload Your Photo</b></label>
+                    <input class="form-control" type="file" name="filename">
+                    <label for="interests" class="form-label"><b>Mark Your Interest</b></label>
+                    <p>
+                        <input type="checkbox" name="interests"> Autos and Vehicles
+                        <input type="checkbox" name="interests"> Education
+                        <input type="checkbox" name="interests"> Comedy
+                        <input type="checkbox" name="interests"> Film and Animations
+                        <input type="checkbox" name="interests"> Music
+                        <input type="checkbox" name="interests"> Books
+                        <input type="checkbox" name="interests"> Gaming
+                        <input type="checkbox" name="interests"> Politics
+                        <input type="checkbox" name="interests"> Pets and Animals
+                        <input type="checkbox" name="interests"> Science and Technology
+                        <input type="checkbox" name="interests"> Sports
+                        <input type="checkbox" name="interests"> Web Programming
+                        <input type="checkbox" name="interests"> Doing Nothing
+                    </p>
+                    <div class="btn-group my-3">
+                        <button type="submit" class="btn btn-success btn-lg">Register</button>
+                        <input type="reset" value="Reset" class="btn btn-danger btn-lg"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 bg-dark text-white text-center">
+        <div>
+            <h4 class="text-uppercase fw-bold">Social Media</h4>
+            <ul class="list-inline list-unstyled">
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;"
+                        href=""><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-youtube"></i></a>
+                    </button>
+                </li>
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href="">
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-instagram"></i>
+                        </button></a>
+                </li>
+    
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href=""><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </button></a>
+                </li>
+    
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;"
+                        href=""><button class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </button>
+                </li>
+                <li class="list-inline-item">
+                    <a style="text-decoration: none; color: white;" href="home.html"><button
+                            class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-dribbble"></i>
+                        </button></a>
+                </li>
+                
+            </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <small class="fst-italic">
+                        Copyright © All Rights <i>Reserved</i> 2024
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+
+</html>

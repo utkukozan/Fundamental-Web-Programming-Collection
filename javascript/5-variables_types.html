@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Types</title>
+</head>
+<body>
+    <script>
+        /* Primitive Types */
+        // String
+        let firstName = "Utku";
+        console.log(typeof firstName); // The typeof command prints the type of the variable. It will print "string" here.
+
+        // Number
+        let age = 20;
+        console.log(typeof age); // number
+        let money = 100.5;
+        console.log(typeof money); // number
+
+        // Boolean
+        let isActive = true;
+        let isFalse = false;
+
+        console.log(typeof isActive); // boolean
+        console.log(typeof isFalse); // boolean
+
+        // null
+        let job = null;
+        console.log(typeof job); // null
+
+        // undefined
+        let car;
+        console.log(typeof car); // undefined
+
+        /* Reference Types - Objects */
+        // Array
+        let names = ["Utku", "William"]; 
+        console.log(typeof names); // object
+
+        // Object (similar to struct in C)
+        let address = {
+            city: 'Ankara',
+            country: "Turkey"
+        }
+
+        console.log(typeof address) // object
+
+        // Function
+
+        var calculateAge = function(){
+            return 0;
+        };
+
+        console.log(typeof calculateAge) // function
+
+    </script>
+</body>
+</html>

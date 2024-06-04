@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <script>
+        // The isNaN command checks if a value is a number. If it's not a number, it returns true.
+        val = isNaN('10');
+
+        // toPrecision rounds the number to the specified decimal places.
+        var num = 10.123456789;
+        val = num.toPrecision(6)
+        console.log(val);
+        // Alternatively, toFixed can be used. It specifies the number of digits to display after the decimal point.
+        val = num.toFixed(3);
+        console.log(val);
+        // Math
+        val = Math.PI; // Returns the value of Pi.
+        console.log(val);
+
+        val = Math.round(2.4); // Rounds to the nearest integer -> 2
+        val = Math.round(2.7); // Rounds to the nearest integer -> 3
+        val = Math.ceil(2.4); // Rounds up to the nearest integer -> 3
+        val = Math.floor(2.6) // Rounds down to the nearest integer -> 2
+
+        val = Math.sqrt(64) // Square root of 64
+        val = Math.pow(2,4); // 2 raised to the power of 4
+        val = Math.abs(-42); // Returns the absolute value
+        val = Math.min(1,2,3,4,5); // Returns the minimum value
+        val = Math.max(1,2,3,4,5); // Returns the maximum value
+        val = Math.random()*10 // Returns a decimal number between 0 and 9
+        val = Math.floor(Math.random()*100+1) // Returns a whole number between 1 and 100
+    </script>
+</body>
+</html>

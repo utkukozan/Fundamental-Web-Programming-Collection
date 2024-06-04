@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<title>List&Listgroups - Bootstrap</title>
+
+</head>
+
+<body class="w-75 mx-auto my-4">
+
+	<!-- To remove bullet points and margins from the list -->
+	<ul class="list-unstyled">		
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>		
+	</ul>
+	
+	<br><br>
+	
+	<!-- To display items side by side -->
+	<ul class="list-inline">
+		<li class="list-inline-item">Lorem ipsum.</li>
+		<li class="list-inline-item">Lorem ipsum.</li>
+		<li class="list-inline-item">Lorem ipsum.</li>
+	</ul>
+
+	<br><br>
+	
+	<!-- To group items together -->
+	<ul class="list-group w-25">
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+	</ul>
+
+	<br><br>
+	
+	<ul class="list-group w-25">
+		<li class="list-group-item active">Lorem ipsum dolor.</li> <!-- By adding "active" class, it can be displayed with a different color as if it is clicked. -->
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item active">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+	</ul>
+	
+	<br><br>
+	
+	<ul class="list-group w-25">
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item disabled">Lorem ipsum dolor.</li> <!-- By adding "disabled" class, it can be displayed with a lighter color and cannot be clicked. -->
+		<li class="list-group-item disabled">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+	</ul>
+	
+	<br><br>
+	
+	<div class="list-group w-50">
+		<a href="" class="list-group-item list-group-item-action active">Lorem ipsum.</a> <!-- By adding "list-group-item-action" class, it can have a hover effect. -->
+		<a href="" class="list-group-item list-group-item-action">Lorem ipsum.</a>
+		<a href="" class="list-group-item list-group-item-action disabled">Lorem ipsum.</a>
+		<a href="" class="list-group-item list-group-item-action">Lorem ipsum.</a>
+	</div>
+	
+	<br><br>
+	
+	<!-- To create a group effect without borders on the sides, use "list-group-flush". -->
+	<ul class="list-group list-group-flush">
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+		<li class="list-group-item">Lorem ipsum dolor.</li>
+	</ul>
+	
+	<br><br>
+	<!-- To add color to the list items. -->
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-primary">Lorem ipsum dolor.</li>
+		<li class="list-group-item list-group-item-secondary">Lorem ipsum dolor.</li>
+		<li class="list-group-item list-group-item-success">Lorem ipsum dolor.</li>
+		<li class="list-group-item list-group-item-danger">Lorem ipsum dolor.</li>
+		<li class="list-group-item list-group-item-warning">Lorem ipsum dolor.</li>
+	</ul>
+
+	<br><br>
+	<!-- To add badges to list items. -->
+	<ol class="list-group list-group-numbered">
+		<li class="list-group-item d-flex justify-content-between align-items-start">
+		  <div class="ms-2 me-auto">
+			<div class="fw-bold">Subheading</div>
+			Cras justo odio
+		  </div>
+		  <span class="badge bg-primary rounded-pill">14</span>
+		</li>
+		<li class="list-group-item d-flex justify-content-between align-items-start">
+		  <div class="ms-2 me-auto">
+			<div class="fw-bold">Subheading</div>
+			Cras justo odio
+		  </div>
+		  <span class="badge bg-primary rounded-pill">14</span>
+		</li>
+		<li class="list-group-item d-flex justify-content-between align-items-start">
+		  <div class="ms-2 me-auto">
+			<div class="fw-bold">Subheading</div>
+			Cras justo odio
+		  </div>
+		  <span class="badge bg-primary rounded-pill">14</span>
+		</li>
+	  </ol>
+
+	<br><br>
+	<!-- To number the list items. -->
+	<ol class="list-group list-group-numbered">
+		<li class="list-group-item">Cras justo odio</li>
+		<li class="list-group-item">Cras justo odio</li>
+		<li class="list-group-item">Cras justo odio</li>
+	</ol>
+
+	<br><br>
+	<!-- Sample list -->
+	<div class="list-group">
+		<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+		  <div class="d-flex w-100 justify-content-between">
+			<h5 class="mb-1">List group item heading</h5>
+			<small>3 days ago</small>
+		  </div>
+		  <p class="mb-1">Some placeholder content in a paragraph.</p>
+		  <small>And some small print.</small>
+		</a>
+		<a href="#" class="list-group-item list-group-item-action">
+		  <div class="d-flex w-100 justify-content-between">
+			<h5 class="mb-1">List group item heading</h5>
+			<small class="text-muted">3 days ago</small>
+		  </div>
+		  <p class="mb-1">Some placeholder content in a paragraph.</p>
+		  <small class="text-muted">And some muted small print.</small>
+		</a>
+		<a href="#" class="list-group-item list-group-item-action">
+		  <div class="d-flex w-100 justify-content-between">
+			<h5 class="mb-1">List group item heading</h5>
+			<small class="text-muted">3 days ago</small>
+		  </div>
+		  <p class="mb-1">Some placeholder content in a paragraph.</p>
+		  <small class="text-muted">And some muted small print.</small>
+		</a>
+	  </div>
+</body>
+
+</html>

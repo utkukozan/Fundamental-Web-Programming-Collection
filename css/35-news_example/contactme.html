@@ -1,0 +1,153 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Squared">
+    <meta name="author" content="Utku">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>News Squared | Contact Me</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo-box">
+                <a href="home.html" class="logo text-uppercase">
+                    <h1><i class="fas fa-globe logo-ico"></i>News Squared</h1>
+                </a>
+            </div>
+        </header>
+        <nav>
+            <div>
+                <ul class="nav-bar">
+                    <li>
+                        <a href="home.html" class="text-uppercase nav-item">
+                            <i class="fas fa-home nav-logo"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html" class="text-uppercase nav-item">
+                            <i class="fas fa-newspaper nav-logo"></i>
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sport.html" class="text-uppercase nav-item">
+                            <i class="fas fa-futbol nav-logo"></i>
+                            Sport
+                        </a>
+                    </li>
+                    <li>
+                        <a href="travel.html" class="text-uppercase nav-item">
+                            <i class="fas fa-suitcase-rolling nav-logo"></i>
+                            Travel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="culture.html" class="text-uppercase nav-item">
+                            <i class="fas fa-theater-masks"></i>
+                            Culture
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-uppercase nav-item active-menu">
+                            <i class="fas fa-ellipsis-h nav-logo"></i>
+                            More
+                        </a>
+                        <ul>
+                            <li><a class="nav-item-hidden text-uppercase" href="contactme.html"><i
+                                        class="fas fa-file-signature nav-logo"></i>Contact Me</a></li>
+                            <li><a class="nav-item-hidden text-uppercase" href="about.html"><i
+                                        class="far fa-bookmark nav-logo"></i>About Me</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signin.html" class="text-uppercase nav-item">
+                            <i class="fas fa-sign-in-alt nav-logo"></i>
+                            Sign In
+                        </a>
+                    </li>
+                    <li>
+                        <form class="nav-item-search" id="search-bar" role="search"
+                            action="https://www.google.com/search" method="GET">
+                            <input type="text" placeholder="Search.." name="q">
+                            <button type="submit" value="search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="main-block">
+                <div class="left-part">
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-at"></i>
+                    <i class="fas fa-mail-bulk"></i>
+                </div>
+                <form action="response.html" class="contact-form" method="GET">
+                    <h1 style="padding-bottom:30px">Contact Me</h1>
+                    <div class="info">
+                        <p>Full Name</p> <input class="fname" type="text" name="name" placeholder="Full name">
+                        <p>E-Mail*</p> <input type="email" name="mail" placeholder="Email" required>
+                        <p>Telephone</p> <input type="tel" maxlength="11" name="tel" placeholder="Phone number">
+                        <p>Issue*</p> <input list="Issues" name="Issue" placeholder="Issue" required>
+                        <datalist id="Issues">
+                            <option value="Login/Register Problem">
+                            <option value="Article Errors">
+                            <option value="Report News">
+                            <option value="Partnership">
+                            <option value="Offer">
+                        </datalist>
+                    </div>
+                    <p>Message*</p>
+                    <div>
+                        <textarea rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container clearfix">
+                <div>
+                    <h4 class="text-uppercase">Social Media</h4>
+                    <ul>
+                        <li>
+                            <a style="text-decoration: none; color: white;" href=""><button class="btn btn-outline btn-social">
+                                <i class="fab fa-youtube"></i></a>
+                            </button>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: white;" href=""> <button class="btn btn-outline btn-social">
+                                <i class="fab fa-instagram"></i>
+                            </button></a>
+                        </li>
+        
+                        <li>
+                            <a style="text-decoration: none; color: white;"  href=""><button class="btn btn-outline btn-social">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </button></a>
+                        </li>
+        
+                        <li>
+                            <a style="text-decoration: none; color: white;"  href=""><button class="btn btn-outline btn-social">
+                                <i class="fab fa-fw fa-linkedin-in"></i></a>
+                            </button>   
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: white;" href="home.html"><button class="btn btn-outline btn-social">
+                                <i class="fab fa-fw fa-dribbble"></i>
+                            </button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                    <small>
+                        Copyright © All Rights <i>Reserved</i> 2024
+                    </small>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let names = ['utku', 'william', 'ali'];
+        let years = [2000,1990,1980];
+        let mix = ['utku','william',2000,null,undefined, ['cinema','book']];
+        console.log(names.length)
+        console.log(names);
+        console.log(years);
+        console.log(mix);
+
+        // Accessing elements
+        console.log(names[0]);
+        console.log(mix[2]);
+
+        // Adding elements
+        names.push('newly-added'); // Adds to the end
+        console.log(names);
+        // OR
+        names[5] = "hello" // Adds to a specific index (4th element)
+        console.log(names);
+        // OR to add at a specific index
+        years.unshift(1923);
+        console.log(years);
+
+        // Removing elements
+        names.pop(); // Removes the last element
+        console.log(names);
+        // OR to remove a specific element
+        years.shift(1923);
+        console.log(years);
+
+        // Finding the index of an element
+        let index = names.indexOf('william');
+        console.log(index);
+        // Returns -1 if not found
+
+        // Reversing an array
+        names.reverse();
+        console.log(names);
+
+        // Sorting an array
+        years.sort();
+        console.log(years);
+
+        // Concatenating arrays
+        let val = years.concat(names);
+        console.log(val);
+
+        // Adding elements to an array using splice method
+        names.splice(2,0,'mehmet');
+        console.log(names);
+
+        // find method
+        val = years.find(over18); // This method applies the over18 function to all elements
+        console.log(val);
+        // filter method
+        val = years.filter(over18); // This method applies the over18 function to all elements
+        console.log(val);
+
+    
+        function over18(year){
+            let age = 2021 - year;
+            return age>=18; // Returns true if age is greater than or equal to 18, otherwise false
+        }
+
+        // Checking if an element exists using includes method
+        console.log(names.includes('utku'));
+
+        // Converting a string to an array using split
+        let str = "Mercedes,Benz"
+        var arr = str.split(',');
+        console.log(arr);
+        
+    </script>
+</body>
+</html>

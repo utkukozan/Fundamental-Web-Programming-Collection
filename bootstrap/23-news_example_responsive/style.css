@@ -1,0 +1,693 @@
+
+
+/*
+.container{
+    background-color: #DCE1E3;
+    width: 100%;
+}
+
+article{
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.clearfix {
+    overflow:auto;
+}
+
+
+/* Navbar   
+
+nav{
+    background-color:#3F3F3F;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+
+}
+
+.nav-item{
+    display: block;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-decoration:none;
+}
+
+
+nav li ul{
+    display: none;
+    position: absolute;
+    background-color: #3F3F3F;
+    width: 148px;
+}
+
+.nav-item-hidden{
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-decoration:none;
+    text-align: left;
+    float: left;
+}
+
+*/ 
+.active-menu{
+    font-size: 25px;
+}
+
+.nav-item:hover{
+    background-color: orange;
+    color: black;
+}
+
+.nav-item:active {
+    background-color: coral;
+    color: white;
+}
+
+
+
+
+
+/* Search bar 
+.nav-item-search input{
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    width: 44%;
+    padding: 15px 20px;
+}
+.nav-item-search button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.nav-bar li:last-child{
+    float: right;
+    padding-left: 15px;
+}
+*/
+
+/* Header */
+
+.logo{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    font-weight:bold;
+    font-family: 'Zen Dots', cursive;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.logo-ico{
+    text-align: left;
+    font-size: 30px;
+    width: 50px;
+    position: relative;
+    color: white;
+}
+
+#logo-box{
+    background-color: #343a40;
+    padding:20px
+}
+
+#logo-box a:hover{
+    cursor:default;  
+}
+
+.nav-logo{
+    padding: 5px;
+    text-align: left;
+}
+
+
+/* Columns News */
+
+.col{   
+    float: left;
+    width: 33.3%;
+}
+
+.news-text{
+    text-indent: 10px;
+    font-size:16px;
+    width: 75%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.category{
+    font-size: 25px;
+    text-decoration: none;
+    color: #343434;
+    font-weight: bold;
+    font-family: 'Orelega One', cursive;
+}
+
+
+.img-fluid-home{
+    width:80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.img-fluid-home:hover{
+    width:100%;
+    transition: all .5s;
+}
+
+/*
+.more-text{
+    display: none;
+}
+
+.more-btn:active + .more-text {
+    display: block;
+}
+*/
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+
+.headline{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#orange-borderline{
+    border-left: 5px solid orange;
+}
+#red-borderline{
+    border-left: 5px solid red;
+}
+#green-borderline{
+    border-left: 5px solid green;
+}
+#blue-borderline{
+    border-left: 5px solid blue;
+}
+
+/* News Page */
+
+.news .headline:hover{
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.news .img-fluid,.news .img-fluid-col2{
+    opacity: 0.6;
+    width: 98%;
+    height: 200px;
+}
+.news .img-fluid:hover, .news .img-fluid-col2:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.news .news-text{
+    position: relative;
+    left: 50px;
+}
+
+.news .news-text::first-letter{
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+/*
+.img-fluid-col2{
+    width:98%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.col2{  
+    float: left;
+    width: 50%;
+}
+*/
+
+/* Sport */
+.sport .img-fluid{
+    width: 98%;
+}
+.sport .img-fluid-col2{
+    width: 98%;
+    height: 350px;
+}
+
+.sport .news-text{
+    position: relative;
+    left: 50px;
+}
+
+.sport .news-text::first-letter{
+    color: #202020;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+
+/* Score Table 
+.ptable table{
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    font-family: 'Orelega One', cursive;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+th, td {
+    padding:1px;
+}
+
+th{
+	color: black;
+    font-size: 12px;
+}
+
+.headin{
+    padding-top:25px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+    font-family: 'Indie Flower', cursive;   
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: rgb(90, 90, 90);
+}
+
+.pos{
+	text-align: center;
+}
+
+.pos td{
+	color: grey;
+}
+
+table .coltable{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: gainsboro;
+    color: white;
+}
+
+.pos:hover{
+	background-color:rgba(220, 220, 220, 0.253);
+    color: white;
+}
+*/
+
+.flag{
+    width: 20px;
+    padding-right: 5px;
+}
+
+.points{
+    font-weight: bolder;
+    color: black;
+}
+
+/* Culture */
+.img-fluid-col1-2{
+    width: 100;
+}
+
+.culture .news-text::first-letter{
+    border: 1px solid Black;
+    color: #202020;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+/* Travel - Blog */
+.travel .col2-img{
+    float: left;
+    width: 25%;
+}
+.travel .col2-text{
+    float: left;
+    width: 25%;
+}
+.travel .news-text::first-letter{
+    border: 1px solid Black;
+    color: #202020;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+
+
+/* Contact */
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1c87c9;
+    }
+
+.left-part .fas {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: #fff;
+}
+.left-part .fa-envelope {
+    transform: rotate(-20deg);
+}
+.left-part .fa-at , .fa-mail-bulk{
+    transform: rotate(10deg);
+}
+/*
+.contact-form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+}
+
+
+.contact-form input,form textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+}
+
+.contact-form input::placeholder {
+    color: #666;
+}
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.contact-form button:hover {
+    background: #2371a0;
+}
+.left-part, .contact-form {
+    width: 50%;
+}
+.left-part .fa-envelope {
+margin-top: 7%;
+
+}
+.left-part .fa-at {
+    margin-top: 2%;
+    margin-left: 65%;
+}
+.left-part .fa-mail-bulk {
+    margin-top: 1%;
+    margin-left: 28%;
+}
+
+.contact-send-text{
+    font-size: 36px;
+    font-family: 'Orelega One', cursive;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.contact-send-table{
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    background-color: #666;
+    border-radius: 50px;
+    border: 1px solid green;
+}
+
+.contact-send-table tr th{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-send-table tr td{
+    color: #fff;
+    text-align: center;
+}
+*/
+
+/* About Page */
+
+.about-section{
+    padding: 20px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.information .column{
+    float: left;
+    width: 33.3%;
+}
+
+.information .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.information .title{
+    color: grey;
+}
+
+.information .button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.information .button:hover {
+    background-color: #555;
+}
+
+/*
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+*/
+
+/* More Page */
+#more-box-col{
+    float: left;
+    width: 50.0%;
+}
+
+#more-box-col a{
+    display: block;
+    padding: 30%;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: royalblue;
+}
+
+#more-box-col a:hover{
+    background-color: yellowgreen;
+}
+
+/* Login Page 
+.login form {
+    width: 450px;
+    border-radius: 20px;
+    display: inline-block;  
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 10px;
+}
+*/
+
+/*
+.login-form-container{
+    text-align: center;
+}
+*/
+
+/*
+.login input[type=text], .login input[type=password], .login input[type=date], .login input[type=tel], .login input[type=email], .login textarea, .login input[type=file]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.login button, input[type=reset]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 45px;
+}
+
+.login button:hover {
+    opacity: 0.8;
+}
+ 
+.login .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.login .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px ;
+}
+
+.login p.reg {
+    text-align: center; 
+}
+*/
+
+/*
+img.avatar {
+    width: 40%;
+}
+
+.login-container2{
+    text-align: center;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.login input[type=checkbox]{
+    margin: 15px 2px 15px 15px;
+}
+
+.login input[type=radio]{
+    margin: 4px 4px 10px;
+}
+*/
+
+/* Footer 
+
+footer{
+    color: #fff;
+    text-align: center;
+}
+*/
+/*
+footer li{
+    display: inline-block;
+    margin: 6px;
+}
+
+footer .container{
+    background-color: #3F3F3F;
+    padding-top: 15px;
+}
+
+footer h4{
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-family: 'Original Surfer', cursive;
+}
+*/
+
+/* Copyright 
+.copyright{
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+}
+*/
+
+footer .btn{
+    font-weight: 100%;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 2.4px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+footer .btn-social{
+    width: 100%;
+    border-radius: 25%;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+footer .btn-outline{
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Arrays & Objects</title>
+</head>
+
+<body>
+    <script>
+        let cars = ["BMW", "Mercedes", "Toyota"];
+
+        for (let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        }
+
+        // for-in
+        for (let i in cars) { // Enter the name of the array.
+            console.log(`index : ${i} value : ${cars[i]}`);
+        }
+
+        // foreach
+        cars.forEach(function (item) { // Each element is copied into the item.
+            console.log(item);
+        });
+
+        // map: returns an array
+
+        let people = [
+            {firstName : "Utku", lastName:"William"},
+            {firstName : "Mehmet", lastName:"Yılmaz"},
+            {firstName : "Ali", lastName:"Veli"},
+            {firstName : "Ayşe", lastName:"Fatma"}
+        ]
+
+        let val = people.map(function (item) {
+            return item.firstName + ' ' + item.lastName;
+        });
+
+        console.log(val);
+
+    </script>
+</body>
+
+</html>

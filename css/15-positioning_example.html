@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        /* The display property determines how elements are positioned and displayed.
+        inline: Elements are displayed side by side (width and height cannot be set).
+        block: Elements are displayed as blocks.
+        inline-block: Elements are displayed side by side as blocks. */
+        #container {
+            width: 1140px;
+        }
+
+        #blog-post-container {
+            width: 75%;
+            float: left;
+        }
+
+        #other-posts {
+            width: 25%;
+            float: left;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        
+        #author-box {
+            border: 1px solid grey;
+        }
+
+        .tags li {
+            list-style: none;
+            display: inline;
+            padding: 2px;
+        }
+        
+        .tags {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blog-post {
+            position: relative;
+        }
+        .date {
+            position: absolute;
+            right: 50px;
+            top: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="blog-post-container">
+            <div class="blog-post">
+                <h2>First Blog Post</h2>
+                <p class="date">07.03.2021</p>
+                <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero adipisci veritatis
+                    nesciunt autem, qui eum labore, illum accusamus suscipit totam reiciendis et sit officia magnam
+                    soluta beatae. Perspiciatis, ut iste.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil ea dolorum ipsam consectetur
+                    quas, ad commodi a laboriosam nisi. Aperiam, quidem quisquam! Tempora perferendis accusamus eligendi
+                    debitis aspernatur maxime, atque molestiae optio voluptas delectus perspiciatis vero! Laudantium,
+                    quae. Deserunt, magnam ut molestias tenetur vel unde nemo illum quasi architecto.
+                </p>
+
+                <ul class="tags">
+                    <li>Asp.net</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>NodeJs</li>
+                </ul>
+            </div>
+
+            <div class="blog-post">
+                <h2>Second Blog Post</h2>
+                <p class="date">07.03.2021</p>
+                <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero adipisci veritatis
+                    nesciunt autem, qui eum labore, illum accusamus suscipit totam reiciendis et sit officia magnam
+                    soluta beatae. Perspiciatis, ut iste.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil ea dolorum ipsam consectetur
+                    quas, ad commodi a laboriosam nisi. Aperiam, quidem quisquam! Tempora perferendis accusamus eligendi
+                    debitis aspernatur maxime, atque molestiae optio voluptas delectus perspiciatis vero! Laudantium,
+                    quae. Deserunt, magnam ut molestias tenetur vel unde nemo illum quasi architecto.
+                </p>
+                <ul class="tags">
+                    <li>C#</li>
+                    <li>Javascript</li>
+                    <li>KnockoutJs</li>
+                    <li>ExpressJs</li>
+                </ul>
+            </div>
+
+            <div class="blog-post">
+                <h2>Third Blog Post</h2>
+                <p class="date">07.03.2021</p>
+                <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero adipisci veritatis
+                    nesciunt autem, qui eum labore, illum accusamus suscipit totam reiciendis et sit officia magnam
+                    soluta beatae. Perspiciatis, ut iste.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil ea dolorum ipsam consectetur
+                    quas, ad commodi a laboriosam nisi. Aperiam, quidem quisquam! Tempora perferendis accusamus eligendi
+                    debitis aspernatur maxime, atque molestiae optio voluptas delectus perspiciatis vero! Laudantium,
+                    quae. Deserunt, magnam ut molestias tenetur vel unde nemo illum quasi architecto.
+                </p>
+
+                <ul class="tags">
+                    <li>Asp.net</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>NodeJs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="other-posts">
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="other">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <div style="clear: both;"></div>
+        <div id="author-box">
+            <img src="https://picsum.photos/200" width="100px">
+            <p class="author-name">Anon Anonymous</p>
+        </div>
+    </div>
+</body>
+
+</html>

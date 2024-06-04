@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Tags</title>
+</head>
+
+<body>
+    <!-- A semantic element clearly defines its meaning to both the browser and the developer.
+
+    Examples of non-semantic elements: <div> and <span> - They do not provide any information about the content.
+        
+    Examples of semantic elements: 
+    <article> -> Article
+    <aside> -> Additional information
+    <details> -> Details
+    <figcaption> -> Caption
+    <figure> -> Figures like images, text, etc.
+    <footer> -> Footer
+    <header> -> Header
+    <main> -> Main content
+    <mark> -> Text highlight
+    <nav>  -> Navigation menu
+    <section> -> Different sections within a page
+    <summary> -> Summary
+    <time> -> Date and time
+    <img> -> Image            --->
+
+    <!-- 1st Way -->
+    <div id="header"></div>
+    <!-- 2nd Way -->
+    <header></header>
+    <!-- The 2nd way is more important in terms of HTML5 standards. -->
+    <!-- The 2nd way is preferred by search engines. -->
+
+    <header>
+        <img id="logo">
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">courses</a></li>
+                <li><a href="#">articles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Categories</h2>
+        <nav>
+            <h3>HTML</h3>
+            <ul>
+                <li><a href="#">what is HTML?</a></li>
+                <li><a href="#">first HTML page?</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h3>Css</h3>
+            <ul>
+                <li><a href="#">what is CSS?</a></li>
+                <li><a href="#">CSS syntax</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <main>
+        <h1>Html and Css Lessons</h1>
+        <p>Utku</p>
+
+        <article>
+            <h2>What is HTML?</h2>
+            <p>What is HTML and what is it used for? We will explain it today.</p>
+        </article>
+        <article>
+            <h2>What is CSS?</h2>
+            <p>What is CSS and what is it used for? We will explain it today.</p>
+        </article>
+    </main>
+
+    <footer>
+        All rights reserved. 2021
+    </footer>
+
+    <!-- Although these semantic tags may not make much sense on their own, they create a meaningful structure when combined with CSS. -->
+</body>
+
+</html>

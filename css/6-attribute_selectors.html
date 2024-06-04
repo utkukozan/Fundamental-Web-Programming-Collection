@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selectors</title>
+    <style>
+    p[title]{
+        /* All p tags with the title attribute will have a green border */
+        border: 2px solid green;
+        padding: 5px
+    }
+    p[title="third paragraph"]{
+        /* All p tags with the title attribute equal to "third paragraph" will have a gold background color */
+        background-color: gold;
+    }
+    a[href^=https]{
+        /* All a tags with an href attribute starting with "https" will have a red color */
+        color:red
+    }
+    a[href$=com]{
+        /* All a tags with an href attribute ending with "com" will have an aqua color */
+        color:aqua
+    }
+    input[type=text]{
+        /* Increases the size of text input fields and sets the background color to orange */
+        display: block;
+        width: 150px;
+        background-color: orange
+    }
+    input[type=button]{
+        /* Changes the background color and text color of buttons */
+        background:pink;
+        color: #FFFFFF;
+        padding: 8px 16px ;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Attribute Selectors</h1>
+
+    <p>This is a paragraph without the title attribute. </p>
+
+    <p title="second">
+        p[title] selects all paragraphs containing a title attribute.
+    </p>
+
+    <p title="third paragraph">
+        p[title~="paragraph"] selects all paragraphs with a title attribute containing the word, paragraph
+    </p>
+
+    <p title="forth paragraph">
+        p[title="#4 paragraph"] selects all paragraphs with a title attribute containing the exact text, #4 paragraph. Matches are case-sensitive and must match letter-for-letter including whitespace.
+    </p>
+
+
+    <p>
+        <a href="https://www.example.net" target="_blank">example with target _blank</a>
+        <a href="http://www.example.com">example</a>
+    </p>
+    
+    <p>
+        <input type="text" name="Name">
+        <input type="button" value="Button">
+    </p>
+</body>
+</html>
